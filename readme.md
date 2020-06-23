@@ -15,4 +15,4 @@ Main Tools Used : TensorFlow, Keras, Scikit learn, NumPy, MySQL
 <ul/>
 
 ## Model Architecture 
-<img src="Architecture.gif" height="300px">
+<img src="Architecture.gif" height="500px">
