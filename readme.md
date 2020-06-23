@@ -1,6 +1,6 @@
 # Hi, Welcome to Track Smoker Project:
 ## Problem Statement:
-Develop a system that can detect whether a person is smoking or not in public place and automatically report it to Law and Enforcement authorities
+Develop a system that can detect whether a person is smoking or not in public place and automatically report it to Law and Enforcement authorities with the location. 
 ## Project in a nutshell
 <ul>
 <li>
@@ -14,4 +14,5 @@ Main Tools Used : TensorFlow, Keras, Scikit learn, NumPy, MySQL
 </li>
 <ul/>
 
+## Model Architecture 
 <img src="Architecture.gif" height="500px">
