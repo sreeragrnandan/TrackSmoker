@@ -13,3 +13,5 @@ Uses Machine Learning to Identify a person is smoking or not, if found smoking t
 Main Tools Used : TensorFlow, Keras, Scikit learn, NumPy, MySQL
 </li>
 <ul/>
+
+<img src="Architecture.gif" height="500px">
