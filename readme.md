@@ -82,7 +82,25 @@ def load_image(image_path):
     img = tf.keras.applications.inception_v3.preprocess_input(img)
     return img
 ```
-😍 Prediction Step
+➗ Divided Training and Validation data into batches for faster training dynamics and better generalization performance, by defining a generator
+🤩 At same time we Resize the image and Label the Image
+```python
+# Flow training images in batches of 20 using train_datagen generator
+train_generator = train_datagen.flow_from_directory(
+        train_dir,  # This is the source directory for training images
+        target_size=(299, 299),  # All images will be resized to 299x299
+        batch_size=100,
+        # Since we use binary_crossentropy loss, we need binary labels
+        class_mode='binary')
+
+# Flow validation images in batches of 20 using val_datagen generator
+validation_generator = val_datagen.flow_from_directory(
+        validation_dir,
+        target_size=(299, 299),
+        batch_size=40,
+        class_mode='binary')
+```
+### 😍 Prediction Step
 ```python
 
 # Smoking on validation
